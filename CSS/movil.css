@@ -1,0 +1,401 @@
+:root {
+    --naranja: #FC9615;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --gris: #585858;
+    --amarillo: #F0AE0F;
+    --azul: #030749;
+    --gris-claro: #f3f3f3;
+    --azulhover: #173969;
+    --back_footer: #111A3A;
+}
+
+/* Media Queries para dispositivos de 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .header-uno,
+    .header-dos {
+        display: none;
+    }
+
+    #iconomenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .img_nav,
+    .btn1 {
+        display: none;
+    }
+
+    .opciones {
+        width: 85%;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .opciones li {
+        width: 100%;
+        border-bottom: 1px #ccc solid;
+    }
+
+    /* primera seccion */
+
+    .titulo_movil {
+        display: block;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr 1fr;
+        /* Dos columnas */
+        gap: 15px;
+        padding: 30px;
+        left: 5%;
+        /* Ajustar posición */
+    }
+
+    .servicio-card {
+        padding: 30px;
+        /* Reducir padding */
+    }
+
+    /* servicios */
+    .contenido_acercade {
+        flex-direction: column;
+        align-items: center;
+        padding: 15%;
+        margin-top: 25%;
+    }
+
+    .texto_acercade,
+    .img_acercade {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .cita_bloque {
+        width: 100%;
+    }
+
+    .img_acercade img {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* seccion experiencia */
+    .contenedor_WCH {
+        flex-direction: column;
+        gap: 20px;
+        top: 410%;
+        /* Ajustar según la posición deseada */
+        left: 5%;
+        /* Centrando la sección */
+
+    }
+
+    .columna-izquierda img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .columna-derecha {
+        width: 100%;
+        position: static;
+        padding: 20px;
+    }
+
+    .columna-derecha h2 {
+        font-size: 1.8rem;
+    }
+
+    .columna-derecha p {
+        font-size: 0.95rem;
+    }
+
+    /* case study */
+    .fotoparallaxs {
+        margin-top: 150%;
+        min-height: 700px;
+        background-attachment: scroll;
+        /* Para mejorar rendimiento en móviles */
+    }
+
+    .text_para {
+        width: 80%;
+    }
+
+    .text_para h2 {
+        font-size: 1.5rem;
+    }
+
+    .fotos {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contenedor_fotos {
+        top: 15%;
+        left: 0%;
+    }
+
+    /* seccion de equipo */
+    .personas {
+        gap: 30px;
+        left: 0%;
+    }
+
+    .persona {
+        width: 40%;
+    }
+
+    .persona-tamanio {
+        width: 100%;
+        /* Ajusta el ancho de las imágenes */
+    }
+
+    .puesto {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .redes a i {
+        font-size: 20px;
+        /* Reduce el tamaño de los íconos */
+    }
+
+    .trabajo {
+        font-size: 18px;
+    }
+
+    .txt_titulo {
+        gap: 40px;
+    }
+
+    /* testimonios */
+    .testimonios {
+        margin-top: 120%;
+    }
+
+    .slide_carru {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .acerca {
+        margin-top: 170%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-uno,
+    .header-dos {
+        display: none;
+    }
+
+    #iconomenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .img_nav,
+    .btn1 {
+        display: none;
+    }
+
+    .opciones {
+        width: 90%;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .opciones li {
+        width: 100%;
+        border-bottom: 1px #ccc solid;
+    }
+
+    /* primera seccion */
+    .titulo_movil {
+        display: block;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+        left: 5%;
+    }
+
+    .servicio-card {
+        padding: 20px;
+    }
+
+    /* servicios */
+    .contenido_acercade {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        margin-top: 200%;
+    }
+
+    .texto_acercade,
+    .img_acercade {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .cita_bloque {
+        width: 100%;
+    }
+
+    .img_acercade img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* seccion experiencia */
+    .contenedor_WCH {
+        flex-direction: column;
+        gap: 20px;
+        top: 380%;
+        left: 5%;
+        margin-top: 250%;
+    }
+
+    .columna-izquierda img {
+        max-width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .columna-derecha {
+        width: 100%;
+        position: static;
+        padding: 20px;
+    }
+
+    .columna-derecha h2 {
+        font-size: 1.5rem;
+    }
+
+    .columna-derecha p {
+        font-size: 0.9rem;
+    }
+
+    /* case study */
+    .fotoparallaxs {
+
+        min-height: 600px;
+        background-attachment: scroll;
+    }
+
+    .text_para {
+        width: 80%;
+    }
+
+    .text_para h2 {
+        font-size: 1.3rem;
+    }
+
+    .fotos {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor_fotos {
+        top: 20%;
+        left: 0%;
+    }
+
+    /* seccion de equipo */
+    .personas {
+        gap: 20px;
+        left: 0%;
+    }
+
+    .persona {
+        width: 40%;
+    }
+
+    .persona-tamanio {
+        width: 100%;
+    }
+
+    .puesto {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .redes a i {
+        font-size: 18px;
+    }
+
+    .trabajo {
+        font-size: 16px;
+    }
+
+    .txt_titulo {
+        gap: 30px;
+    }
+
+    /* testimonios */
+    .testimonios {
+        margin-top: 150%;
+    }
+
+    .slide_carru {
+        width: 180%;
+    }
+
+    .back-to-top {
+        right: 620px;
+    }
+
+    .estadisticas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* Dos columnas de igual tamaño */
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-servicios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .txt_titulo h1 {
+        width: 150px;
+    }
+
+
+
+    .encabezado-seccion {
+        line-height: 1.5;
+    }
+
+    .seccion-servicios {
+        height: 100%;
+    }
+
+    .contenedor_info {
+        line-height: .9;
+        top: 1%;
+        left: 0;
+    }
+}
